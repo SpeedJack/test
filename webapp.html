@@ -29,8 +29,10 @@
     <div id="picker"
          style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%"></div>
 </div>
+<p id="test">---</p>
 </body>
 <script type="text/javascript">
     Telegram.WebApp.expand();
+    document.getElementById('test').innerHTML = Telegram.WebApp.initData
 </script>
 </html>
