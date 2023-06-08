@@ -14,7 +14,7 @@
 	});
 	colorPicker.on('color:change', function (color) {
 		document.body.style.background = color.hexString;
-		fetch('https://82.49.161.114/test', {
+		fetch('https://82.49.161.114:8443/test', {
 			method: 'POST',
 			body: JSON.stringify({
 				value: 1243,
@@ -29,7 +29,7 @@
 
 	Telegram.WebApp.ready();
 	Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
-		fetch('https://82.49.161.114/test', {
+		fetch('https://82.49.161.114:8443/test', {
 			method: 'POST',
 			body: JSON.stringify({
 				value: 1243,
